@@ -6,7 +6,7 @@ module.exports = function (config) {
     sigleRun: true,
     frameworks: ['mocha'],
     files: [
-      'node_modules/foundation-sites/dist/foundation.css'
+      'node_modules/foundation-sites/dist/foundation.css',
       'node_modules/jquery/dist/jquery.js',
       'app/tests/**/*.test.jsx'
     ],
@@ -14,7 +14,7 @@ module.exports = function (config) {
       'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
     },
     reporters: ['mocha'],
-    clients: {
+    client: {
       mocha: {
         timeout: '10000'
       }
